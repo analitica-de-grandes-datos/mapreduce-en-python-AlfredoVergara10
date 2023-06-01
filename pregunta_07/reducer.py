@@ -44,3 +44,7 @@ for letter in unique:
         # Si la clave coincide con la clave por la que se agrupa, añadir la clave y valor al grupo
         if key.split('   ')[0] == letter:
             keys_dict_group.update({key: value})
+
+    # Imprimir el resultado por grupos ordenando por valores.
+    for key_ans, value_ans in sorted(keys_dict_group.items(), key=lambda item: item[1]):
+        sys.stdout.write(key_ans + '   ' + str(value_ans) + '\n')
