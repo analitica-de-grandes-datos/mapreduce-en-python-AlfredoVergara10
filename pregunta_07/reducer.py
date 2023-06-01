@@ -47,12 +47,3 @@ for letter in unique:
 
     # Imprimir el resultado por grupos ordenando por valores.
     for key_ans, value_ans in sorted(keys_dict_group.items(), key=lambda item: item[1]):
-        
-        # Corrección manual para coincidir con el grader.
-        if key_ans == "E   1999-12-06":
-            sys.stdout.write(key_ans + '   ' + str(value_ans) + '\n')
-            sys.stdout.write("E   1991-02-18   141" + '\n')
-        
-        elif key_ans != "E   1991-02-18":
-            sys.stdout.write(key_ans + '   ' + str(value_ans) + '\n')
-
