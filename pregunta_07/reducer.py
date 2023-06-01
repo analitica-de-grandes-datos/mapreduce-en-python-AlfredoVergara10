@@ -55,3 +55,4 @@ for letter in unique:
         
         elif key_ans != "E   1991-02-18":
             sys.stdout.write(key_ans + '   ' + str(value_ans) + '\n')
+
