@@ -13,7 +13,7 @@ keys_dict = {}
 # Iterar sobre cada clave.
 for row in infile:
 
-    key, value = row.split('')
+    key, value = row.split('\n')
     value = int(value)
     
     # Si la clave ya ha sido reconocida, añadir la clave a la lista de claves, sino, actualizar el diccionario.
