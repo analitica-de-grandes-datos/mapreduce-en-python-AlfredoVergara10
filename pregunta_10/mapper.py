@@ -2,10 +2,7 @@
 # >>> Escriba el codigo del mapper a partir de este punto <<<
 #
 
-
-
 import sys
-
 
 # Guardar el contenido del archivo en una variable.
 infile = sys.stdin
@@ -15,7 +12,6 @@ for row in infile:
 
     # Generar una lista de cada una de las columnas de la fila.
     columns = row.split('\t')
-    
     # Seleccionar la primera columna como valor.
     value = columns[0]
 
