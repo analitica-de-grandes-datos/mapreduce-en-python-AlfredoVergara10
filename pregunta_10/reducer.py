@@ -24,4 +24,11 @@ for row in infile:
 
 # Iterar sobre el diccionario y obtener el resultado.
 for key_ans, value_ans in sorted(keys_dict.items()):
+    
+    # Ordenar las claves de mayor a menor.
+    value_ans.sort()
+    # Obtener una cadena de caracteres a partir de la lista de claves.
+    value_ans = ','.join(map(str, value_ans))
+
+    # Imprimir el resultado.
     sys.stdout.write(key_ans + '\t' + value_ans + '\n')
