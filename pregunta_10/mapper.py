@@ -17,7 +17,7 @@ for row in infile:
     value = columns[0]
 
     # Seleccionar los elementos de la segunda columna como claves.
-    for key in columns[1].split('\r')[0].split(','):
+    for key in columns[1].split('\n')[0].split(','):
         
         # Imprimir la "clave,valor" por cada elemento de la segunda columna.
         sys.stdout.write(key + ',' + value + '\n')
