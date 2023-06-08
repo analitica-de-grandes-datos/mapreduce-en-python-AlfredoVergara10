@@ -11,7 +11,7 @@ infile = sys.stdin
 for row in infile:
 
     # Generar una lista de cada una de las columnas de la fila.
-    columns = row.split('\t')
+    columns = row.split('  ')
     
     # Seleccionar la primera columna como valor.
     value = columns[0]
